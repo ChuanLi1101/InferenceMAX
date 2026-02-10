@@ -48,6 +48,10 @@ export SGLANG_MORI_FP8_DISP=True
 
 export SGLANG_MORI_NUM_MAX_DISPATCH_TOKENS_PER_RANK=16384
 
+# Disaggregation transfer parallelism: more queues and threads for higher KV transfer throughput
+export SGLANG_DISAGGREGATION_QUEUE_SIZE=8
+export SGLANG_DISAGGREGATION_THREAD_POOL_SIZE=16
+
 export MORI_APP_LOG_LEVEL=INFO
 
 # Router logging control:
